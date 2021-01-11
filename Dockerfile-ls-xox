@@ -1,0 +1,21 @@
+FROM maven:3.6-jdk-13 AS xoxbuild
+MAINTAINER maximilian schiedermeier
+COPY LobbyServiceXox/src /usr/src/app/src
+COPY LobbyServiceXox/pom.xml /usr/src/app
+RUN mvn -f /usr/src/app/pom.xml clean package
+
+## Discard Maven, run JAR file using JRE
+FROM openjdk:8-jre-alpine
+
+## Wait for the LobbyService to be ready (which in its turn waits for the DB)
+ENV WAIT_VERSION 2.7.2
+ADD https://github.com/ufoscout/docker-compose-wait/releases/download/$WAIT_VERSION/wait /wait
+RUN chmod +x /wait
+
+# copy the jar from the build stage, expose the required port and run it.
+COPY --from=xoxbuild /usr/src/app/target/Xox.jar /usr/app/Xox.jar
+EXPOSE 4244
+#ENTRYPOINT ["java","-jar","/usr/app/Xox.jar"]
+
+# allow debug if startup fails, with: docker run -it --entrypoint /bin/bash ls-xox -s
+RUN apk add --no-cache bash coreutils grep sed
