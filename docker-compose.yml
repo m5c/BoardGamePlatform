@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile-ls-db
     ports:
       - "3453:3306"
-  restapi:
+  lobby:
     build:
       context: .
       dockerfile: Dockerfile-ls-api
@@ -26,10 +26,10 @@ services:
     ports:
       - "4244:4244"
     depends_on:
-      - restapi
+      - lobby
     command: sh -c "/wait && java -jar /usr/app/Xox.jar"
     environment:
-      - WAIT_HOSTS=restapi:4242
+      - WAIT_HOSTS=lobby:4242
       - WAIT_HOSTS_TIMEOUT=300
       - WAIT_SLEEP_INTERVAL=5
       - WAIT_HOST_CONNECT_TIMEOUT=5
