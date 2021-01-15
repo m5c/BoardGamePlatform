@@ -19,4 +19,10 @@
 
 ## Setup
 
+ * Clone this repository
+```git clone https://github.com/kartoffelquadrat/BoardGamePlatform.git```
+
+ * *Recursively* pull, and re-attach all subrepositories:  
+```./updatesubmodules.sh```
+
 ## ...
