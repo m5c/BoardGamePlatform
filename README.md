@@ -46,4 +46,11 @@ The BGP provides docker configurations for all BGP-core services and a docker-co
 
  > The BGP services can also be installed manually (without docker). To do so, follow the install instructions in the individual repositories.
 
-## ...
+## Contact / Pull Requests
+
+Contact information for bug reports and pull requests:
+
+ * Author: Maximilian Schiedermeier ![email](email.png)
+ * Github: [Kartoffelquadrat](https://github.com/kartoffelquadrat)
+ * Webpage: [McGill University, School of Computer Science](https://www.cs.mcgill.ca/~mschie3)
+ * License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
