@@ -4,12 +4,14 @@ Microservice configuration for an automated deployment of BGP core services.
 
 ## About
 
-The *Board Game Platform* is a Microservice of reusable components for generic board game implementations. This repository hosts the configuration files for deployment of it's core services as docker containers on a single host. The core services are:
+The *Board Game Platform* (BGP) is a Micro-Service Application, consisting of several reusable components. Purpose of the BGP is to provide generic board game functionality, to speed up the development and deployment of new board game implementations. The provided services are:
 
  * [Database](https://github.com/kartoffelquadrat/LobbyService/blob/master/Dockerfile-ls-db): A MySQL database for BGP users, credentials and roles.
  * [LobbyService](https://github.com/kartoffelquadrat/LobbyService): A SpringBoot/Java Webservice for BGP user, game and session management.
    * [LobbyServiceWebUI](): A HTML/JS web frontend for the LobbyService.
  * [BgpXox](https://github.com/kartoffelquadrat/BgpXox): A sample BGP compliant implementation of the game *Tic Tac Toe*, written in SpringBoot/Java. Comes with a built in HTML/JS web frontend.
+
+ > As a game developer, you want to replace the sample game *BgpXox* by one or many of your own games.
 
 ## About Docker
 
