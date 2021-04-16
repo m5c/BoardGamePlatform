@@ -8,7 +8,7 @@ The *Board Game Platform* (BGP) is a Micro-Service Application, consisting of se
 
  * [Database](https://github.com/kartoffelquadrat/LobbyService/blob/master/Dockerfile-ls-db): A MySQL database for BGP users, credentials and roles.
  * [LobbyService](https://github.com/kartoffelquadrat/LobbyService): A SpringBoot/Java Webservice for BGP user, game and session management.
-   * [LobbyServiceWebUI](): A HTML/JS web frontend for the LobbyService.
+   * Contains [LobbyServiceWebUI](https://github.com/kartoffelquadrat/LobbyServiceWebInterface): A HTML/JS web frontend for the LobbyService.
  * [BgpXox](https://github.com/kartoffelquadrat/BgpXox): A sample BGP compliant implementation of the game *Tic Tac Toe*, written in SpringBoot/Java. Comes with a built in HTML/JS web frontend.
 
  > As a game developer, you want to replace the sample game *BgpXox* by one or many of your own games.
