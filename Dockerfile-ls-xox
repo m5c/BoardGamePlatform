@@ -13,9 +13,9 @@ ADD https://github.com/ufoscout/docker-compose-wait/releases/download/$WAIT_VERS
 RUN chmod +x /wait
 
 # copy the jar from the build stage, expose the required port and run it.
-COPY --from=xoxbuild /usr/src/app/target/Xox.jar /usr/app/Xox.jar
+COPY --from=xoxbuild /usr/src/app/target/xox.jar /usr/app/xox.jar
 EXPOSE 4244
-#ENTRYPOINT ["java","-jar","/usr/app/Xox.jar"]
+#ENTRYPOINT ["java","-jar","/usr/app/xox.jar"]
 
 # allow debug if startup fails, with: docker run -it --entrypoint /bin/bash ls-xox -s
 RUN apk add --no-cache bash coreutils grep sed
