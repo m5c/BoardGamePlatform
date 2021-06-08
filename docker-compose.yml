@@ -30,7 +30,7 @@ services:
       - "4244:4244"
     depends_on:
       - lobby
-    command: sh -c "/wait && java -jar /usr/app/Xox.jar"
+    command: sh -c "/wait && java -jar /usr/app/xox.jar"
     environment:
       - WAIT_HOSTS=lobby:4242
       - WAIT_HOSTS_TIMEOUT=300
