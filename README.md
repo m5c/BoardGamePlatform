@@ -24,6 +24,13 @@ The service interplay configuration for this Board Game Platform uses Docker-Com
 
  > Note: You can use this docker-compose configuration on any system, no matter if a personal laptop or a headless server.
 
+The following files are used for deployment:
+
+ * [```docker-compose.yml```](docker-compose.yml): Docker-Compose file to orchestrate the startup sequence and network wiring of containered platform modules:
+   * [```Dockerfile-bgp-db```](Dockerfile-bgp-db): Container build instructions for the Database module.
+   * [```Dockerfile-bgp-ls```](Dockerfile-bgp-ls): Container build instructions for the [Lobby-Service](https://github.com/kartoffelquadrat/LobbyService) module.
+   * [```Dockerfile-bgp-xox```](Dockerfile-bgp-xox): Container build instructions for the [*Tic Tac Toe* sample game](https://github.com/kartoffelquadrat/BgpXox) module.
+
 ### Prerequisites
 
 #### Docker-Compose
