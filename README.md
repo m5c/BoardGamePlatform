@@ -50,7 +50,7 @@ Depending on your host-os, install docker-compose with one of the links below:
  * Test the platform:
     * Visit the [WebUI](http://127.0.0.1:4242/)
     * login with default admin credentials: ```maex```, ```abc123_ABC123```
-      * Click "Admin Zone", create new users (use user or amdin, **not** service as account type)
+      * Click "Admin Zone", create new users (use *user* or *admin* as account type, do **not** use *service*)
     * Click "Logout". Then login with standard (non admin users) in two browsers
     * create a Tic Tac Toe session on browser 1
     * join the Tic Tac Toe session on browser 2
