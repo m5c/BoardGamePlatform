@@ -1,6 +1,6 @@
 [submodule "LobbyService"]
 	path = LobbyService
 	url = https://github.com/kartoffelquadrat/LobbyService.git
-[submodule "LobbyServiceXox"]
-	path = LobbyServiceXox
-	url = https://github.com/kartoffelquadrat/LobbyServiceXox.git
+[submodule "BgpXox"]
+	path = BgpXox
+	url = https://github.com/kartoffelquadrat/BgpXox

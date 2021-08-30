@@ -16,7 +16,7 @@ git pull
 
 # update Xox
 cd $BASE
-cd LobbyServiceXox
+cd BgpXox
 git branch
 git checkout main
 git pull
