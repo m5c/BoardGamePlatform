@@ -37,6 +37,7 @@ The following files are used for deployment:
 
 Depending on your host-os, install docker-compose with one of the links below:
    * Mac OS / Windows: [Docker Desktop (docker-compose and GUI-tools)](https://www.docker.com/products/docker-desktop)
+     * Windows: Additionally follow the [official instructions to install the linux kernel](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps).
    * Prod Systems / Linux: [Docker Compose (just docker-compose)](https://docs.docker.com/compose/install/)
 
 #### Code
@@ -44,9 +45,12 @@ Depending on your host-os, install docker-compose with one of the links below:
  * Clone this repository:  
 ```git clone https://github.com/kartoffelquadrat/BoardGamePlatform.git```
 
- * *Recursively* pull, and re-attach all subrepositories:  
+ * *Recursively* pull, and re-attach all subrepositories:
+
+   * Mac / Linux:  
 ```./updatesubmodules.sh```  
-(This is a modular platform, you need all internal modules for it to work)
+   * Windows:  
+```.\updatesubmodules.ps1```
 
 ### Deployment
 
