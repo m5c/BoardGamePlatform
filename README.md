@@ -54,6 +54,11 @@ Depending on your host-os, install docker-compose with one of the links below:
 
 ### Deployment
 
+ * If you're on a Mac with M1 chip, set these environment variables:  
+```
+export DOCKER_BUILDKIT=0
+export COMPOSE_DOCKER_CLI_BUILD=0
+```
  * Power up the platform:  
 ```docker-compose up```  
 (use ```docker-compose up --build``` to force rebuild)
