@@ -4,6 +4,3 @@
 [submodule "BgpXox"]
 	path = BgpXox
 	url = https://github.com/kartoffelquadrat/BgpXox
-[submodule "BgpAcquire"]
-	path = BgpAcquire
-	url = https://github.com/kartoffelquadrat/BgpAcquire
