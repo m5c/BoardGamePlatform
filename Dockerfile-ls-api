@@ -1,4 +1,4 @@
-FROM maven:3.6-jdk-13 AS build
+FROM arm64v8/maven:3.6-amazoncorretto-8 AS build
 MAINTAINER maximilian schiedermeier
 COPY LobbyService/src /usr/src/app/src
 COPY LobbyService/pom.xml /usr/src/app

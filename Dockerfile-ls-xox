@@ -1,4 +1,4 @@
-FROM maven:3.6-jdk-13 AS xoxbuild
+FROM arm64v8/maven:3.6-amazoncorretto-8 AS xoxbuild
 MAINTAINER maximilian schiedermeier
 COPY BgpXox/src /usr/src/app/src
 COPY BgpXox/pom.xml /usr/src/app
