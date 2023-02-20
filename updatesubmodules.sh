@@ -15,11 +15,10 @@ git checkout main
 git pull
 
 # update Xox
-cd $BASE
+cd "$BASE"
 cd BgpXox
 git branch
 git checkout main
 git pull
 
-cd $BASE
-
+cd "$BASE"
